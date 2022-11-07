@@ -6,11 +6,11 @@
 // import { createLogger } from '../utils/logger'
 import { APIGatewayProxyEvent } from 'aws-lambda';
 import * as uuid from 'uuid'
-import { getUserId } from '../lambda/utils';
-import { TodoItem } from '../models/TodoItem';
+import { getUserId } from '../../lambda/utils';
+import { TodoItem } from '../../models/TodoItem';
 // import * as createError from 'http-errors'
 
-import { CreateTodoRequest } from "../requests/CreateTodoRequest";
+import { CreateTodoRequest } from "../../requests/CreateTodoRequest";
 
 // TODO: Implement businessLogic
 export function createNewTodo(todoRequest: CreateTodoRequest, event: APIGatewayProxyEvent): TodoItem {

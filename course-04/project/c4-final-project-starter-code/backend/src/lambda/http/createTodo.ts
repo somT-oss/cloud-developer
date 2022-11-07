@@ -6,8 +6,8 @@ import { CreateTodoRequest } from '../../requests/CreateTodoRequest'
 
 
 // Changes
-import { createTodoGroup } from '../../helpers/todosAcess'
-import { createNewTodo } from '../../helpers/todos'
+import { createTodoGroup } from '../../helpers/dataLayer/todosAcess'
+import { createNewTodo } from '../../helpers/businessLogic/todos'
 
 // import { createTodo } from '../../businessLogic/todos'
 export const handler = middy(
